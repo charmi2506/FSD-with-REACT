@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animations Task</title>
+    <style>
+        .sky {
+            width: 100%;
+            height: 500px;
+            background-image: linear-gradient(blue, white);
+            animation:shift 10s ease-in-out infinite;
+        }
+        @keyframes shift{
+            0%{
+                background-image: linear-gradient(blue, white);
+            }
+            50%{
+                background-image: linear-gradient(rgb(40, 40, 113),orangered);
+            }
+            100%{
+                background-image: linear-gradient(blue, black,grey);
+            }
+        }
+
+
+        .road {
+            width: 100%;
+            height: 220px;
+            background-color: black;
+            position: relative;
+        }
+
+        .stripes {
+            width: 110px;
+            height: 20px;
+            position: absolute;
+            bottom: 100px;
+            background-color: white;
+        }
+        .sunmoon{
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            background-color:orangered;
+            position:absolute;
+            top:80px;
+            right:90px;
+            animation: moon 10s ease-in-out infinite ;
+            border: 2px solid orangered;
+            box-shadow:0 0 50px orangered ;
+        }
+        @keyframes moon{
+            0%{
+                background-color:orangered;
+                border: 2px solid orangered;
+                box-shadow:0 0 50px orangered ;
+            }
+            50%{
+                background-color:rgb(170, 48, 3);
+                border: 2px solid rgb(170, 48, 3);
+                box-shadow:0 0 50px rgb(170, 48, 3);
+            }
+            100%{
+                background-color:white;
+                border: 2px solid white;
+                box-shadow:0 0 50px white;
+            }
+        }
+
+        .car{
+            position:absolute;
+            bottom:120px;
+            right:2px;
+            animation:movecar 10s linear infinite;
+        }
+        @keyframes movecar{
+            from{
+                right:2px;
+            }
+            to{
+                right:1040px;
+            }
+        }
+        .tree1{
+            position:absolute;
+            bottom:200px;
+            left:50px;
+        }
+        .tree2{
+            position:absolute;
+            bottom:209px;
+            left:350px;
+        }
+        .tree3{
+            position:absolute;
+            bottom:209px;
+            right:270px;
+        }
+        .tree4{
+            position:absolute;
+            bottom:209px;
+            right:100px;
+        }
+        .clouds{
+            position:absolute;
+            top:50px;
+            left:700px;
+        }
+        .clouds2{
+            position:absolute;
+            top:100px;
+            right:250px;
+        }
+        .streetlight{
+            position:absolute;
+            bottom:200px;
+            left:500px;
+        }
+        .streetlight2{
+            position:absolute;
+            bottom:200px;
+            left:560px;
+        }
+        .streetlight3{
+            position:absolute;
+            bottom:200px;
+            left:620px;
+        }
+        .streetlight4{
+            position:absolute;
+            bottom:200px;
+            left:680px;
+        }
+        .streetlight5{
+            position:absolute;
+            bottom:200px;
+            left:740px;
+        }
+        .streetlight7{
+            position:absolute;
+            bottom:200px;
+            left:860px;
+        }
+        .streetlight8{
+            position:absolute;
+            bottom:200px;
+            left:920px;
+        }
+        .streetlight9{
+            position:absolute;
+            bottom:200px;
+            left:980px;
+        }
+        .streetlight10{
+            position:absolute;
+            bottom:200px;
+            left:1040px;
+        }
+        .streetli{
+            position:absolute;
+            bottom:200px;
+            right:550px;
+        }
+       /* @keyframes firstone{
+            from{
+                bottom:160px;
+                right:2px;
+                background-image:linear-gradient(blue,white);
+            }
+            to{
+                bottom:160px;
+                right:200px;
+                background-image:linear-gradient(black,white);
+            }
+        }*/
+    </style>
+</head>
+<body>
+    <div class="sky">
+        <div class="sunmoon"></div>
+        <div class="clouds"><img src="./clo-removebg-preview.png"></div>
+        <div class="clouds2"><img src="./clo2-removebg-preview.png"></div>
+    </div>
+    <div class="road">
+        <div class="streetlight"><img src="./li-removebg-preview.png"></div>
+        <div class="streetlight2"><img src="./li-removebg-preview.png"></div>
+        <div class="streetlight3"><img src="./li-removebg-preview.png"></div>
+        <div class="streetlight4"><img src="./li-removebg-preview.png"></div>
+        <div class="streetlight5"><img src="./li-removebg-preview.png"></div>
+        
+        <div class="streetlight7"><img src="./li-removebg-preview.png"></div>
+        <div class="streetlight8"><img src="./li-removebg-preview.png"></div>
+        <div class="streetlight9"><img src="./li-removebg-preview.png"></div>
+        <div class="streetlight10"><img src="./li-removebg-preview.png"></div>
+        <div class="streetli"><img src="./li-removebg-preview.png"></div>
+        <div class="stripes" style="left: 90px;"></div>
+        <div class="stripes" style="left: 250px;"></div>
+        <div class="stripes" style="left: 410px;"></div>
+        <div class="stripes" style="left: 570px;"></div>
+        <div class="stripes" style="left: 730px;"></div>
+        <div class="stripes" style="left: 890px;"></div>
+        <div class="stripes" style="left: 1050px;"></div>
+        <div class="stripes" style="left: 1210px;"></div>
+        <div class="stripes" style="left: 1370px;"></div>
+        <div class="car"><img src="./a_car-removebg-preview.png"></div>
+        <div class="tree1"><img src="./a_tree-removebg-preview.png"></div>
+        <div class="tree2"><img src="./a-removebg-preview.png"></div>
+        <div class="tree3"><img src="./tr-removebg-preview.png"></div>
+        <div class="tree4"><img src="./tr-removebg-preview.png"></div>
+    </div>
+</body>
+</html>

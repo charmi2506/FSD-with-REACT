@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Animation</title>
+        <style>
+            .one{
+                width:150px;
+                height:150px;
+                background-color: bisque;
+                position:relative;
+                left:0px;
+                animation-name:animations;
+                animation-duration: 2s;
+                animation-iteration-count: 2;
+                animation-timing-function: ease;
+                border-radius:50px;
+            }
+            .two{
+                width:150px;
+                height:150px;
+                background-color: salmon;
+                position:relative;
+                left:0px;
+                animation-name:animations;
+                animation-duration: 2s;
+                animation-iteration-count: 2;
+                animation-timing-function: ease-in;
+                border-radius:50px;
+            }
+            .three{
+                width:150px;
+                height:150px;
+                background-color: chocolate;
+                position:relative;
+                left:0px;
+                animation-name:animations;
+                animation-duration: 2s;
+                animation-iteration-count: 2;
+                animation-timing-function: ease-out;
+                border-radius:50px;
+            }
+            @keyframes animations{
+                0%{
+                    left:0px;
+                }
+                50%{
+                    left:100px;
+                }
+                100%{
+                    left:400px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </body>
+</html>
