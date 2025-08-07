@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Speccial Button</title>
+        <style>
+          body{
+              display:flex;
+              justify-content: center;
+             align-items: center;
+   
+}
+.demo{
+     z-index: 1;
+     position:relative;
+   /*  overflow: hidden;*/
+     border: 2px solid rgb(0, 0, 0);
+     background-color:black;
+    width:100px;
+    height:50px;
+    border-radius:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.demo::after{
+    z-index: -1;
+    content:""; 
+     /* border-radius: 50%; */
+     width:25px;
+     height:25px;
+     border-radius:50px;
+     background-color:rgb(246, 242, 242);
+     opacity:0.5;
+    border: 1px solid black;
+    position:absolute;
+    /* transform:translateX(-100px); */
+    transition:transform .5s linear;
+    transform:translate(50px,20px);
+  
+    
+} 
+
+.demo:hover::after{
+    transform:translate(0px,0px);
+    width:80px;
+    height:45px;
+    opacity:0.5;
+    border-radius:10px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="demo">Click Me</div>
+    </body>
+</html>

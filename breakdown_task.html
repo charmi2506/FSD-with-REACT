@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navbar UI</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: navy;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            height: 70px;
+            color: white;
+        }
+
+        .navbar .left, .navbar .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .navbar a:hover {
+            background-color: royalblue;
+        }
+
+        .icon {
+            font-size: 22px;
+            margin-right: 10px;
+        }
+
+        .user-menu {
+            position: relative;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: navy;
+            border: 1px solid white;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .user-menu:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="left">
+            <span class="icon"><img src="./university_logo.jpg"></span>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Retail</a>
+        </div>
+        <div class="right user-menu">
+            <span class="icon">👤</span>
+            <div class="dropdown">
+                <a href="#">Login</a>
+                <a href="#">Reset Password</a>
+                <a href="#">Edit Profile</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

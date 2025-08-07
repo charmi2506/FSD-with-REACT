@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Combinators</title>
+        <style>
+            /* space combinator */
+
+          /*  .parent h1{        
+                color:red;
+            }
+                */
+
+             /* > combinator affects first level elements*/
+
+            .parent > h1{
+                color:red;
+            }
+                
+            /* + combinator affects right after the tag it select first sibling*/
+
+           /* .parent2 + p{
+                color:red;
+            }*/
+            /* ~ combinator also select siblings the diff is select all siblings*/
+           /* .parent2 + p{
+                color:red;
+            }
+                */
+        </style>
+    </head>
+        <body>
+            <h1>Top Outer h1</h1>
+            <div class="parent">
+                <h1>First</h1>
+                <h1>Second</h1>
+                <div>
+                    <h1>Inner Child</h1>
+                </div>
+                <p>Third</p>
+            </div>
+            <h1>Bottom Outer h1</h1>
+            <h1>+ combinator</h1>
+            <div class="parent2">
+                <p>Paragraph</p>
+                <span>Span</span>
+                <p>PAragraph</p>
+            </div>
+            <p>paragraph after parent2</p>
+            <h1>heading</h1>
+            <p>paragraph another</p>
+        </body>
+
+</html>

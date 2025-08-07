@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>ATM Card</title>
+        <style>
+            body{
+                margin:0;
+                background-color:white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .card{
+                width:400px;
+                height:250px;
+                background-color:#2f4f4f;
+                border-radius:20px;
+                position:relative;
+                margin:15px;
+            }
+            .world{
+                position:absolute;
+                top:20px;
+                left:25px;
+                color:white;
+                font-size:25px;
+                font-weight:700px;
+            }
+            .chip{
+                position:absolute;
+                top:65px;
+                left:25px;
+            }
+            .number{
+                top:145px;
+                left:25px;
+                color:white;
+                position:absolute;
+                font-size:20px;
+                font-weight:700px;
+            }
+            .letters{
+                bottom:70;
+                left:25px;
+                color:white;
+                POSITION:absolute;
+                font-size:6px;
+                font-weight:500px;
+            }
+            .expire{
+                bottom:50px;
+                left:25px;
+                color:white;
+                position:absolute;
+                font-size:15px;
+                font-weight:600px;
+            }
+            .name{
+                bottom:30px;
+                left:25px;
+                color:white;
+                position:absolute;
+                font-size:15px;
+                font-weight:600px;
+            }
+            .symbol{
+                position:absolute;
+                top:20px;
+                right:25px;
+            }
+            .debit{
+                top:90px;
+                right:25px;
+                color:white;
+                position:absolute;
+                font-size:20px;
+                font-weight:600px;
+            }
+            .mastercard{
+                position:absolute;
+                bottom:20px;
+                right:25px;
+                color:white;
+                font-size:15px;
+                font-weight:450px;
+            }
+            .circle1{
+                position:absolute;
+                bottom:40px;
+                border-radius:50%;
+                width:45px;
+                height:45px;
+            }
+            .circle2{
+                position:absolute;
+                bottom:40px;
+                border-radius:50%;
+                width:45px;
+                height:45px;
+            }
+            .circle1{
+                background-color: red;
+                right:45px;
+            }
+            .circle2{
+                background-color:yellow;
+                right:20px;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <div class="world">world</div>
+            <div class="chip"><img src="./chip.png"/></div>
+            <div class="number">5412 7512 3412 3456</div>
+            <div class="letters">VALID THRU</div>
+            <div class="expire">12/27</div>
+            <div class="name">Cardholder: Charmi</div>
+            <div class="symbol">
+                <img src="./wifi.png"/>
+            </div>
+            <div class="debit">debit</div>
+            <div class="mastercard">mastercard</div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+    </body>
+</html>

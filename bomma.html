@@ -1,0 +1,375 @@
+<html>
+    <head>
+        <title>Human</title>
+        <style>
+            body {
+      background-color: #e6e6e6;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    .human {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    /* Head */
+    .head {
+      width: 120px;
+      height: 120px;
+      background: #ffe0bd;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .hair {
+      width: 120px;
+      height: 60px;
+      background: black;
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
+      position: absolute;
+      top: -25px;
+      left: 0;
+      z-index: 2;
+    }
+
+    .eye {
+      width: 15px;
+      height: 15px;
+      background: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 40px;
+    }
+
+    .eye.left { left: 30px; }
+    .eye.right { right: 30px; }
+
+    .ear {
+      width: 10px;
+      height: 20px;
+      background-color: #fcd7b6;
+      position: absolute;
+      top: 40px;
+    }
+
+    .ear.left {
+      left: -10px;
+    }
+
+    .ear.right {
+      right: -10px;
+    }
+
+
+    .mouth {
+      width: 40px;
+      height: 20px;
+      background: red;
+      border-radius: 0 0 20px 20px;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    /* Body */
+    .body {
+      width: 100px;
+      height: 120px;
+      background-color: #5a3e36;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .shirt-buttons {
+      position: absolute;
+      top: 20px;
+      left: 45px;
+    }
+
+    .shirt-buttons div {
+      width: 6px;
+      height: 6px;
+      background-color: white;
+      border-radius: 50%;
+      margin: 8px 0;
+    }
+
+    .pocket {
+      position: absolute;
+      top: 30px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+      border: 1px solid white;
+    }
+
+    .belt {
+      width: 100%;
+      height: 10px;
+      background-color: rgb(80, 45, 45);
+      position: absolute;
+      bottom: 0;
+    }
+
+    /* Arms */
+    .arm {
+      width: 80px;
+      height: 15px;
+      background-color: #fcd7b6;
+      position: absolute;
+      top: 5px;
+    }
+
+    .arm.left {
+      left: -80px;
+    }
+
+    .arm.right {
+      right: -80px;
+    }
+
+    .glove {
+      width: 15px;
+      height: 25px;
+      background-color: black;
+      position: absolute;
+      top: -5px;
+      
+
+    }
+
+    .glove.left {
+      left: -15px;
+    }
+
+    .glove.right {
+      right: -15px;
+    }
+
+    /* Legs */
+    .legs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 0px;
+    }
+
+    .leg {
+      width: 20px;
+      height: 60px;
+      background-color:#ffe0bd;
+      position: relative;
+    }
+
+    .shorts {
+      width: 90px;
+      height: 100px;
+      background-color: #303030;
+      border-bottom: 2px solid white;
+      border-radius: 5px;
+    }
+
+    .socks {
+      width: 100%;
+      height: 30px;
+      background-color: red;
+      position: absolute;
+      bottom: 0px;
+    }
+
+    .shoe {
+      width: 30px;
+      height: 15px;
+      background-color: rgb(46, 2, 2);
+      position: absolute;
+      top:60px;
+      bottom: 0;
+      border-bottom-left-radius:10%;
+      border-bottom-right-radius:10%;
+      border-radius: 10px;
+    }
+    .finger1{
+        width:18px;
+        height:5px;
+        border: 1px solid black;
+        background-color:  #6c3f04;
+        position: absolute;
+        border-radius:10px;
+        left:-18px;
+        top:0px;
+
+    }
+    .finger2{
+        height:5px;
+        width:18px;
+        border: 1px solid black;
+        background-color:  #6c3f04;
+        position: absolute;
+        border-radius:10px;
+        left:-18px;
+        top:5px;
+
+
+    }
+    .finger3{
+        height:5px;
+        width:18px;
+        border: 1px solid black;
+        background-color:  #6c3f04;
+        position: absolute;
+        border-radius:10px;
+        left:-18px;
+        top:10px;
+
+
+    }
+    
+    .finger4{
+        height:4px;
+        width:18px;
+        border: 1px solid black;
+        background-color:  #6c3f04;
+        position: absolute;
+        border-radius:10px;
+        left:-18px;
+        top:15px;
+
+
+    }
+    
+    .finger5{
+        height:3.5px;
+        width:18px;
+        border: 1px solid black;
+        background-color:  #6c3f04;
+        position: absolute;
+        border-radius:10px;
+        left:-18px;
+        top:19px;
+
+
+    }
+    .finger6{
+        width:18px;
+        height:5px;
+        border: 1px solid black;
+        background-color:  #6c3f04;
+        position: absolute;
+        border-radius:10px;
+        right:-35px;
+        top:-5px;
+
+    }
+     .finger7{
+        width:18px;
+        height:4px;
+        border: 1px solid black;
+        background-color:  #6c3f04;
+        position: absolute;
+        border-radius:10px;
+        right:-35px;
+        top:-0px;
+
+    }
+    .finger8{
+        width:18px;
+        height:4px;
+        border: 1px solid black;
+        background-color:  #6c3f04;
+        position: absolute;
+        border-radius:10px;
+        right:-35px;
+        top:5px;
+
+    }
+    .finger9{
+        width:18px;
+        height:4px;
+        border: 1px solid black;
+        background-color:  #6c3f04;
+        position: absolute;
+        border-radius:10px;
+        right:-35px;
+        top:10px;
+
+    }
+    .finger10{
+        width:18px;
+        height:3.5px;
+        border: 1px solid black;
+        background-color:  #6c3f04;
+        position: absolute;
+        border-radius:10px;
+        right:-35px;
+        top:15px;
+
+    }
+        </style>
+    </head>
+    <body>
+        <center>
+              <div class="character">
+    <div class="head">
+      <div class="hair"></div>
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+      <div class="ear left"></div>
+      <div class="ear right"></div>
+      <div class="mouth"></div>
+    </div>
+
+    <div class="body">
+      <div class="shirt-buttons">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="pocket"></div>
+      <div class="belt"></div>
+
+    <div class="arm left">
+      <div class="glove left">
+        <div class="finger1"></div>
+        <div class="finger2"></div>
+        <div class="finger3"></div>
+        <div class="finger4"></div>
+        <div class="finger5"></div>
+      </div>
+    </div>
+
+    <div class="arm right">
+      <div class="glove right"></div>
+      <div class="finger6"></div>
+      <div class="finger7"></div>
+      <div class="finger8"></div>
+      <div class="finger9"></div>
+      <div class="finger10"></div>
+    </div>
+    </div>
+
+    <div class="shorts"></div>
+
+    <div class="legs">
+      <div class="leg">
+        <div class="socks"></div>
+        <div class="shoe"></div>
+      </div>
+      <div class="leg">
+        <div class="socks"></div>
+        <div class="shoe"></div>
+      </div>
+    </div>
+  </div>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+.parent{
+    width:500px;
+    height:500px;
+    border:5px solid chocolate;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%
+}
+.child{
+    width: calc(100% - 50%);
+    height: calc(100% - 50%);
+    border-bottom-left-radius: 50%;
+     border-bottom-right-radius: 50%;
+     border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: 3px solid greenyellow;
+}

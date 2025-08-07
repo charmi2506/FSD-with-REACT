@@ -1,0 +1,29 @@
+.my_div{
+    width:736px;
+    height:1308px;
+    border:2px solid violet;
+    background-image:url("./download\ \(3\).jpg");
+    
+
+    /* background-repeat: no-repeat; */
+    background-repeat: repeat;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-size:100% 100%; */
+
+    /* or u canuse for 100% wid and 100% hei is 'cover' */
+    /* background-size:cover; -->it will shrink the image so we use most 'contain' */
+    /* background-size:contain; */
+
+     /* can insert in 9 positions */
+    background-position:top left;
+     /* background-position:top left;
+      background-position:top center;
+       background-position:top right;
+        background-position:center center;
+         background-position:center right;
+          background-position:bottom left;
+           background-position: bottom center;
+            background-position:bottom right; */
+
+}

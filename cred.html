@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Golden Ticket</title>
+    <style>
+        body {
+            margin: 0;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .total {
+            width: 1200px;
+            height: 350px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .box1 {
+            position: absolute;
+            top: 5px;
+            left: 9px;
+            width: 1100px;
+            height: 100%;
+            background-color: rgba(154, 5, 154, 0.759);
+        }
+
+        .image {
+            position: absolute;
+            bottom: 1px;
+            left: 1px;
+            width: 100%;
+            height: auto;
+        }
+
+        .image1 {
+            position: absolute;
+            bottom: 1px;
+            left: 440px;
+            width: 100%;
+            height: auto;
+        }
+
+        .box2 {
+            top: 50px;
+            left: 50px;
+            position: absolute;
+            background-color: plum;
+            height: 100px;
+            width: 100px;
+        }
+
+        .letters {
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+            font-weight: 500;
+            color: antiquewhite;
+            position: absolute;
+        }
+
+        .letters1 {
+            top: 50px;
+            left: 20px;
+            font-size: 30px;
+            font-weight: 500;
+            color: antiquewhite;
+            position: absolute;
+        }
+
+        .title {
+            top: 20px;
+            right: 30px;
+            font-size: 50px;
+            font-weight: 600;
+            color: #ffd700;
+            position: absolute;
+        }
+
+        .date {
+            top: 75px;
+            right: 30px;
+            font-size: 25px;
+            font-weight: 600;
+            color: rgb(1, 96, 1);
+            position: absolute;
+        }
+
+        .time {
+            top: 100px;
+            right: 30px;
+            font-size: 25px;
+            font-weight: 600;
+            position: absolute;
+            color: rgb(1, 96, 1);
+        }
+
+        .place {
+            top: 130px;
+            right: 30px;
+            font-size: 25px;
+            font-weight: 600;
+            position: absolute;
+            color: rgb(1, 96, 1);
+        }
+
+        .title2 {
+            top: 155px;
+            right: 30px;
+            font-size: 25px;
+            font-weight: 600;
+            position: absolute;
+            color: gold;
+        }
+
+        .vertical-left {
+            position: absolute;
+            top: 40px;
+            left: -20px;
+            transform: rotate(-90deg);
+            transform-origin: left top;
+            font-size: 22px;
+            color: orange;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .right-strip {
+            position: absolute;
+            top: 0;
+            right: -100px;
+            width: 100px;
+            height: 100%;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-left: 2px solid #ccc;
+        }
+
+        .right-strip .fan {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            font-size: 40px;
+            font-weight: bold;
+            background: linear-gradient(to top, #8000ff, #ff00b3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .right-strip .pass {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            font-size: 30px;
+            font-weight: bold;
+            background: linear-gradient(to top, #8000ff, #ff00b3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 10px;
+        }
+
+        .barcode {
+            writing-mode: vertical-rl;
+            font-size: 14px;
+            margin-top: 10px;
+            letter-spacing: 2px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="total">
+        <div class="box1">
+            <div class="image"><img src="./background-removebg-preview (1).png"></div>
+            <div class="image1"><img src="./background-removebg-preview (1).png"></div>
+
+            <div class="box2">
+                <div class="letters">T H</div>
+                <div class="letters1">G D</div>
+            </div>
+
+            <div class="title">GOLDEN DAY</div>
+            <div class="date">28/05/2025</div>
+            <div class="time">2:30 PM Onwards</div>
+            <div class="place">Gallery, Kakinada ground</div>
+            <div class="title2">#fanpass</div>
+
+            <div class="vertical-left">TECHNICAL HUB</div>
+
+            <div class="right-strip">
+                <div class="fan">FAN</div>
+                <div class="pass">PASS</div>
+                <div class="barcode">THGD240002</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
